@@ -1,0 +1,76 @@
+---
+import Badge from '../components/Badge.astro';
+import Briefcase from '../components/icons/Briefcase.astro';
+import Card from '../components/Card.astro';
+import Experience from '../components/Experience.astro';
+import Footer from '../components/Footer.astro';
+import Github from '../components/icons/Github.astro'
+import Layout from '../layouts/Layout.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro'
+import Mail from '../components/icons/Mail.astro'
+import SectionContainer from '../components/SectionContainer.astro';
+import SocialPill from '../components/SocialPill.astro'
+---
+
+<Layout 
+	title="Porfolio de William Cruz - QA"
+	description='Soy un tester'
+>
+	<main>
+		<SectionContainer class="py-44 pb-24">
+			<img
+			 class="rounded-full size-16 mb-6"
+			 src="https://avatars.githubusercontent.com/u/40901669?v=4" 
+			 alt="willycruz photo"
+			/>
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4"> 
+				Hi, I am William Cruz
+			<div class="flex justify-center items-center"> 
+			<a href="https://www.linkedin.com/in/williamcruzwc/"
+				target="_blank"
+				rel="noopener"
+				class="flex justify-center items-center"
+			>
+				<Badge>Disponible para trabajar</Badge>
+			</a>
+			</div>
+				
+			</h1>
+			<h2 class=" text-xl opacity-80 text-wrap"><span class="text-yellow-200/90">Desarrollador de aplicaciones móviles,</span> listo para aplicar mis conocimientos. 
+				Me apasionan las nuevas tecnologías y me gusta enfrentarme a nuevos retos. 
+				<span class="text-pink-300/90">En la actualidad estoy formándome en el desarrollo frontend con React y backend con Go,</span> 
+				tambiénen la integración de la IA en el flujo de desarrollo. 
+				Me considero un autodidacta nato y en mis tiempos libres me encanta enseñar lo que aprendo.
+			</h2>
+
+			
+			<nav class="flex gap-x-4 mt-6">
+					<SocialPill href="https://www.linkedin.com/in/williamcruzwc/">
+						<LinkedIn class="size-6" />
+						LinkedIn
+					</SocialPill>
+					<SocialPill href="https://github.com/freedomCruz">
+						<Github class="size-6" />
+						Github
+					</SocialPill>
+					<SocialPill href="mailto:williamalcruz77@gmail.com">
+						<Mail class="size-6" />
+						williamalcruz77@gmail.com
+					</SocialPill>
+				
+				</nav>
+			
+		</SectionContainer>
+
+		<SectionContainer id="experience">
+			<h2 class=" text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+				<span class="size-6 "><Briefcase /></span> 
+				Experiencia laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
+	</main>
+</Layout>
+
+
+
